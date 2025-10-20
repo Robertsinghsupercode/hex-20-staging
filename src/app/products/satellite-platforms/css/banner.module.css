@@ -1,0 +1,152 @@
+.sateBanner{
+    height: 1186px;
+    background-image: url('/assets/satebanner-v2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 140px;
+    position: relative;
+    overflow: hidden;
+}
+.containerMainsateBanner, .sateBannerContent{
+    height: 100%;
+}
+.bannerHead{
+    max-width: 50%;
+    width: 100%;
+}
+.bannerBody{
+    max-width: 80%;
+    width: 100%;
+    gap: 60px;
+    padding-top: 430px;
+}
+.whyChooseParent{
+    gap: 44px;
+}
+.whyChooseItem{
+    height: 185px;
+    justify-content: space-between;
+}
+.bannerBody h2{
+    padding: 0 10%;
+}
+.bannerSatelites{
+    position: absolute;
+    top: 36%;
+    right: -5%;
+}
+
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bannerHead{
+    max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+  .sateBanner {
+    padding-top: 60px;
+    height: 800px;
+    background-image: url('/assets/satelite-banner-md.png');
+  }
+
+  .containerMainsateBanner,
+  .sateBannerContent {
+    width: 100%;
+  }
+  .bannerHead {
+    max-width: 100%;
+    padding-top:90px;
+  }
+  .bannerSatelites {
+    display: none;
+  }
+  .bannerDescription{
+    padding-left: 156px;
+    padding-right: 16px;
+    width: 80%;
+  }
+  .bannerBody{
+    gap: 35px;
+    padding-top: 76px;
+  }
+   .whyChooseParent{
+    display: -webkit-inline-box;
+    overflow: auto;
+    padding-left: 12%;
+   }
+   .whyChooseParent::-webkit-scrollbar {
+  display: none; 
+}
+.whyChooseParent .whyChooseItem{
+  margin-right: 1rem;
+}
+
+  .whyChooseItem{
+    max-width: 230px;
+    width: 100%;
+  }
+
+  .whyChooseItem .text-1 {
+    min-height: 300px;
+  }
+
+   .bannerSatelites{
+    display: none;
+   }
+  }
+
+  @media(max-width: 600px){
+      .sateBanner {
+    padding-top: 60px;
+  }
+
+  .containerMainsateBanner,
+  .sateBannerContent {
+    width: 100%;
+  }
+  .bannerHead {
+    max-width: 90%;
+    padding-top:90px;
+  }
+  .bannerSatelites {
+    position: absolute;
+    top: 28%;
+    right: -80%;
+  }
+  .bannerDescription{
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+  .bannerBody{
+    gap: 35px;
+  }
+  .bannerBody{
+    max-width: 100%;
+  }
+}
+
+@media(max-width:320px){
+
+  .cta-btn{
+    width: 263px;
+  }
+}
+
+
+    
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+

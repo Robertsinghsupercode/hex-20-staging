@@ -1,0 +1,51 @@
+.banner {
+  background: linear-gradient(
+      148deg,
+      rgba(0, 0, 0, 0) 19.06%,   
+      rgba(0, 0, 0, 0.8) 100%    
+    ),
+    url('/assets/payload-banner.png') no-repeat;
+    background-size: cover;
+    background-position: center 80px;
+    display: flex;
+    height: 100vh;
+}
+.bannerContent{
+    padding-top: 9rem;
+}
+.description {
+  max-width: 45%;
+}
+.subDescription{
+    max-width: 36%;    
+}
+.bannerDetail{
+    padding-bottom: 40px;
+}
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    height: 70vh;
+  }
+  .description, .subDescription {
+    max-width: 80%;
+    width: 100%;
+  }
+}
+
+@media (max-width:768px){
+  .bannerContent h2{
+    width: 100%;
+  }
+  .bannerContent p, .subDescription{
+    max-width: 100%;
+    width: 100%;
+  }
+  .banner{
+    background-image: url('/assets/payload-sm-banner.png');
+    height: 90vh;
+  }
+  .bannerContent h1{
+      width: 100%;
+  }
+}

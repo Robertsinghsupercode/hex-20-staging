@@ -1,0 +1,104 @@
+.satelliteSec {
+  padding: 100px 0px;
+  background-color: var(--color-4);
+}
+
+.satelliteGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.satelliteCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.satelliteCard:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  position: relative;
+  width: 572px;
+  height: 359px;
+}
+.imageWrapper img, .imageWrapper svg {
+position: absolute;
+}
+.imageWrapper img{
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.imageWrapper svg {
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.borderBottom{
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 17px;
+}
+.satelliteImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content {
+  flex: 1;
+  /* min-width: 300px; */
+}
+
+
+
+.description{
+    max-width: 88%;
+}
+.specs {
+  list-style: none;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.specs span {
+  display: inline-block;
+  width: 170px;
+}
+
+
+@media (max-width:768px){
+  .satelliteCard,.satelliteCard:nth-child(even) {
+    flex-direction: column;
+  }
+  .specs li{
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+  }
+  .satelliteSec {
+    padding-top: 30px;
+  }
+  .imageWrapper{
+    width: 100%;
+  }
+  .imageWrapper img{
+    position: relative;
+  }
+  .imageWrapper svg{
+    scale: 0.8;
+    left: 30%;
+  }
+  .imageWrapper img, .imageWrapper svg{
+width: 100%;
+  }
+}

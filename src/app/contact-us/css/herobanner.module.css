@@ -1,0 +1,177 @@
+ .container{
+  padding-top: 150px;
+  padding-bottom: 100px;
+ }
+.banner {
+  font-size: 2.5rem;
+  font-family: var(--font-1);
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 0 0 3rem 4.5rem;
+  line-height: 1.02;
+  width: 40%;
+}
+.emailGroup {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  row-gap: 14px;
+}         
+.emailRow {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 2.5rem;
+  padding-left: 4.5rem;
+  padding-bottom: 25px;
+}
+
+.emailLabel {
+  font-family: var(--font-3);
+  font-size: 0.6em;
+  letter-spacing: 1.0px;
+  opacity: 0.5;
+  width: 50%;
+}
+.emailLink {
+  font-family: var(--font-1);
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.locationsGrid {
+  width: 100%;
+  box-sizing: border-box;
+}
+.locationsGrid {
+  border-top: 1px solid var(--color-5);  
+}
+.topRow, .bottomRow {
+  display: flex;
+  width: 100%;
+}
+.topRow {
+  border-bottom: 1px solid var(--color-4);
+}
+.officeCard {
+  flex: 1 1 0;
+  border-right: 1px solid var(--color-5);
+  border-bottom: 1px solid var(--color-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between; 
+  padding: 40px 12px 26px;
+  min-height: 330px;
+  box-sizing: border-box;
+}
+.officeImg {
+  margin-top: 0; 
+  margin-bottom: -26px;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+.officeLabel {
+  opacity: 0.5;
+  font-size: 0.82rem;
+  margin-bottom:  -0.4rem;
+}
+.country {
+  font-family: var(--font-1);
+}
+.address {
+  font-family: var(--font-2);
+  font-size: .97rem;
+  line-height: 1.5;
+  opacity: 0.5;
+  max-width: 70%;
+  width: 100%;
+}
+
+/* new  */
+.addressWrap{
+  gap: 60px;
+}
+.addressWrap :nth-child(2){
+  max-width: 70%;
+}
+
+@media (max-width: 768px){
+
+  .banner{
+        width: 95%;
+        margin-left: 13px;
+  }
+  .emailRow {
+    flex-direction: column;
+    gap: 12px;
+    margin-left: -57px;
+  }
+  .emailLabel{
+    font-size: 13px;
+    width: 70%;
+    padding-bottom: 6px;
+  }
+  .emailGroup{
+    row-gap: 0;
+  }
+  .emailLink{
+    font-size: 19px;
+  }
+  .country{
+    margin:7px 0 10px;
+    font-weight: 500;
+  }
+  .topRow, .bottomRow {
+    flex-direction: column;
+  }
+  .officeCard{
+    flex: 1 1;
+    border-right: none;
+    padding: 27px 12px 26px;
+  }
+  .topRow .officeCard:last-child,
+  .bottomRow .officeCard:last-child {
+    gap: 10px;
+  }
+  .officeCard{
+    border: 1.5px solid var(--color-5);
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+  }
+  .locationsGrid{
+    border-top: none;
+  }
+  .bottomRow{
+    border-right: 1.5px solid var(--color-5) !important;
+  }
+
+  .addressWrap{
+    gap: 10px;
+  }
+  .officeCard {
+    min-height: 280px;
+  }
+  .container{
+    padding-bottom: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  

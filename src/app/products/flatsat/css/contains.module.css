@@ -1,0 +1,26 @@
+.containSec{
+    padding: 100px 0px;
+}
+.heading{
+  padding-bottom: 50px;
+}
+.containWrapper{
+  gap: 90px;
+}
+.points{
+  max-width: 360px;
+}
+.svgArrow{
+  margin-top: 5px;
+  flex-shrink: 0
+}
+.point{
+  max-width: 291px;
+}
+@media(max-width: 767px){
+  .containWrapper{
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+

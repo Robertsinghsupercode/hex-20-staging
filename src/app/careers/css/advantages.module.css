@@ -1,0 +1,37 @@
+.advantagesSec{
+    padding: 100px 0;
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
+.advantagesSec h2{
+    padding-bottom: 50px;
+}
+.advantagesBox{
+    position: relative;
+    gap: 48px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.08);  
+    width: 100%;
+}
+.content p{
+    max-width: 60%;
+    width: 100%;
+}
+.advantagesBoxSvg{
+    position: absolute;
+    top: -6%;
+    right: -3%;
+}
+
+/* responsive  */
+@media (max-width: 768px) {
+    .content p{
+        max-width: 80%;
+    }
+    .advantagesBox{
+        gap: 15px;
+    }
+    .advantagesSec{
+        padding-bottom: 60px;
+    }
+}

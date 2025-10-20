@@ -1,0 +1,31 @@
+.missionIntroContentWrap,.missionIntroContentContainer{
+    gap: 90px;
+}
+.missionIntroContentContainer{
+    max-width: 70%;
+    width: 100%;
+}
+.missionImgtWrap{
+    position: relative;
+}
+.missionImgtWrap svg{
+position: absolute;
+}
+.missionIntroSvgOne{
+    top: -2%;
+    right: -2%;
+}
+.missionIntroSvgTwo{
+    bottom: -2%;
+    right: -2%;
+}
+/* tab */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .uaeflatsatContent{
+    flex-direction: column;
+    }
+    .missionIntroContentContainer{
+        padding-bottom: 30px;
+    }
+}
+

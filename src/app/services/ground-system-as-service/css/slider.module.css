@@ -1,0 +1,30 @@
+.sliderContent{
+    padding-top: 90px;
+    text-align: center;
+    max-width: 70%;
+}
+.sliderContent p{
+padding: 0 10%;
+}
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sliderContent{
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width:767px){
+    .slideImage{
+        height: 230px;
+        width: auto;
+    }
+    .sliderContent{
+        max-width: 100%;
+        padding: 40px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .sliderContent p{
+        padding: 0;
+    }
+}

@@ -1,0 +1,85 @@
+.approachWrapper{
+    padding-top: 150px;
+}
+
+.approachContent h2{
+    width: 100%;
+    max-width: 865px;
+}
+
+.gridWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.column{
+    position: relative;
+    padding: 50px 20px;
+    border: 1px solid var(--color-6);
+    gap: 50px;
+}
+
+.topBroder{
+    position: absolute;
+    left: -13px;
+    bottom: -13px;
+    rotate: 180deg;
+}
+
+.column2 .topBroder{
+    left: unset;
+    bottom: unset;
+    top: -13px;
+    right: -13px;
+    rotate: 0deg;
+}
+
+.flexCloumn{
+    padding-top: 100px;
+    gap: 100px;
+}
+
+.textWrapper h2{
+    max-width: 535px;
+}
+
+.textWrapper p{
+    max-width: 495px;
+    margin-bottom: 20px;
+}
+
+.img{
+    width: 100%;
+}
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gridWrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .flexCloumn{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px){
+    .gridWrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .column{
+        gap: 40px;
+        padding: 30px 15px;
+    }
+    .flexCloumn{
+        gap: unset;
+        padding-top: 60px;
+    }
+    .textWrapper{
+        align-items: center;
+    }
+    .approachWrapper{
+        padding-top: 60px;
+    }
+}

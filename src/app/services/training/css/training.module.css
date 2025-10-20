@@ -1,0 +1,57 @@
+.trainingPlanWrapper{
+    padding: 140px 0;
+}
+
+
+.content p{
+    max-width: 333px;
+
+}
+
+.sliderWrapper{
+    padding-top: 40px;
+}
+
+.slideCard{
+    border: 1px solid var(--color-6);
+    padding: 14px 24px 50px;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideCard img{
+    margin-bottom: 10px;
+}
+
+.hoverContent{
+    position: absolute;
+    transform: translateY(150%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    background-color: var(--color-8);
+    padding-top: 30px;
+    gap: 200px;
+    padding: 0 20px;
+    padding-top: 80px;
+}
+
+.slideCard:hover .hoverContent{
+    opacity: 1;
+    transform: translateY(0);
+}
+.idNo{
+    position: relative;
+    z-index: 99999;
+}
+
+/* responsive  */
+@media (max-width:768px){
+    .trainingPlanWrapper{
+        padding: 60px 0;
+    }
+}

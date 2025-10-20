@@ -1,0 +1,91 @@
+
+.bodyMain{
+    background-color: var(--color-4); 
+}
+
+.bannerSec{
+    padding-top: 140px;
+}
+
+.bannerImgSec{
+    position: relative;
+    height: 100vh;
+
+}
+
+.bannerContent{
+    max-width: 60%;
+    width: 100%;
+    text-align: center;
+}
+.bannerContent p{
+padding: 0 10%;
+}
+.bannerDes{
+    width: 60%;
+    gap: 30px;
+    padding-top: 30px;
+}
+.bannerDes svg{
+display: flex;
+flex-shrink: 0;
+}
+.productsCtaSec{
+    padding-bottom: 0;
+}
+
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bannerImgSec{
+        height: 50vh;
+    }
+    .bannerDes{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerImgSec{
+        height: 340px;
+    }
+    .bannerContent{
+        max-width: 100%;
+    }
+    .bannerDes{
+        width: 100%;
+        gap: 20px;
+        padding-top: 20px;
+        flex-direction: column-reverse;
+    }
+    .description{
+        text-align: left;
+    }
+    .lineSvg{
+        margin-left: auto;
+        width: 50%;
+    }
+    .starTrackerProduct{
+        width: 60%;
+        height: auto;
+    }
+}
+
+.productimgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    z-index: 2;
+}
+
+.productimgContainerWrap {
+    position: relative;
+    height: 100%;
+}
+
+.productimgName {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}

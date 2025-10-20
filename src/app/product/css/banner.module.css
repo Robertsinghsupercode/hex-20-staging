@@ -1,0 +1,30 @@
+.banner{
+    background-image: url(../../../../public/assets/productMainBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-3);
+    color: var(--color-4);
+    padding-bottom: 80px;
+}
+.headingWrap{
+    padding-top: 190px;
+    padding-bottom: 110px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.latestSec{
+    padding-top: 90px;
+    margin-bottom: -50px;
+}
+
+/* responsive  */
+@media (max-width: 768px) {
+    .banner{
+        background-size: contain;
+        margin-bottom: -1px;
+        padding-bottom: 0;
+    }
+    .headingWrap{
+        padding-bottom: 34px;
+    }
+}

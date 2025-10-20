@@ -1,0 +1,134 @@
+.aboutBanner{
+    padding-top: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+.aboutBannerContent{
+    max-width: 48%;
+    gap: 14px;
+}
+.aboutBannerContent{
+    padding-bottom: 60px;
+}
+.aboutTeamImg{
+    width: 100%;
+    height: auto;
+}
+.aboutBannerContentTwo{
+    padding: 40px 0 110px 0;
+    max-width: 45%;
+}
+.aboutBannerContentTwo p{
+padding: 28px 0;
+}
+.theJourneyContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 474px;
+    padding: 0 0 130px 0;
+    background-color: var(--color-4);
+    position: relative;
+}
+.theJourneyContainer svg{
+    position: absolute;
+
+}
+.svgLeft{
+    top: -10%;
+    left: -10%;
+}
+.svgRight{
+bottom: 0;
+right: 15%;
+}
+.theJourney, .beyondHorizon{
+    max-width: 50%;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    z-index: 100;
+}
+.beyondHorizon{
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.gradient{
+    width: 100%;
+    height: 500px;
+    flex-shrink: 0;
+    background: linear-gradient(#090909 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .aboutBannerContent, .aboutBannerContentTwo, .theJourney, .beyondHorizon{
+        max-width: 100%;
+    }
+    .theJourneyContainer svg{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width:768px){
+
+    .aboutBannerContent{
+        max-width: 80%;
+    }
+    .aboutBannerContentTwo{
+        max-width: 80%;
+    }
+    .theJourney, .beyondHorizon{
+        max-width: 100%;
+    }
+    .theJourney, .beyondHorizon{
+        margin: 0;
+    }
+    .gradient{
+        display: none;
+    }
+    .theJourneyContainer{
+        gap: 50px;
+    }
+    .theJourneyContainer .svgLeft{
+        top: -10%;
+    }
+    .theJourneyContainer .svgRight{
+        width: 36%;
+        right: auto;
+        top: 45%;
+    }
+    .theJourneyContainer{
+        padding-bottom: 0;
+        padding-top: 0px;
+    }
+    .aboutBannerContentTwo{
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .aboutBannerContent{
+        padding-bottom: 30px;
+    }
+    .aboutBanner{
+        padding-top: 150px;
+        overflow: hidden;
+    }
+    .left{
+        justify-content: start;
+        width: 120%;
+        padding: 0 20px;
+    }
+    .svgLeft, .svgRight{
+        display: none;
+    }
+    .theJourneyContainer svg{
+        position: unset;
+}
+.aboutBannerContentTwo p{
+    padding: 8px 0;
+    }
+}

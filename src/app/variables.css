@@ -1,0 +1,39 @@
+:root {
+    --color-1: #DA3C19;
+    --color-2: #2E34DB;
+    --color-3: #ffffff;
+    --color-4: #090909;
+    --color-5: #595959; 
+    --color-6: #353535;
+    --color-7: #D9D9D9;
+    --color-8: #000000;
+    --color-9: rgba(9, 9, 9, .4);
+    --font-1:  "Archivo" ,Arial;
+    --font-2: "IBM Plex Sans", sans-serif;
+    --font-3: "JetBrains Mono", monospace;
+  }
+
+  @font-face {
+    font-family: "Archivo";
+    src: url("/fonts/archivo/Archivo_Expanded-ExtraLight.ttf") format("opentype");  
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Archivo Reqular";
+    src: url("/fonts/archivo/Archivo_Expanded-Regular") format("opentype");  
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Archivo Medium";
+    src: url("/fonts/archivo/Archivo_Expanded-Medium") format("opentype");  
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Archivo ExtraBold";
+    src: url("/fonts/archivo/Archivo_Expanded-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+  }

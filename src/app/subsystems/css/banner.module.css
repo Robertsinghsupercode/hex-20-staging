@@ -1,0 +1,56 @@
+.bannerSec{
+    height: 706px;
+    position: relative;
+}
+.subSystemBanner{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    z-index: 0;
+}
+.bannerContainer{
+    position: absolute;
+    z-index: 2;
+}
+.bannerContent{
+    padding-top: 300px;
+    max-width: 50%;
+}
+.description{
+    width: 81%;
+    margin: 0 auto;
+}
+.productsCtaSec{
+    padding-bottom: 130px;
+}
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bannerContent{
+        max-width: 100%;
+    }
+    .productsCtaSec{
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width:767px){
+    .bannerSec{
+        overflow: hidden;
+        height: 362px;
+    }
+    .subSystemBanner{
+        height: 362px;
+        width: 100%;
+        position: absolute;
+        top: -3%;
+        right: -30%;
+        scale: 1.5;
+    }
+    .bannerContent{
+        max-width: 100%;
+        padding-top: 150px;
+    }
+    .productsCtaSec{
+        padding-bottom: 40px;
+    }
+}

@@ -1,0 +1,27 @@
+.smartWrapper{
+    position: relative;
+}
+
+.smartWrapper h2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.smartSvg{
+    width: 100%;
+}
+
+
+@media (max-width:768px){
+    .smartWrapper h2{
+    position: unset;
+    text-align: center;
+    transform: unset;
+    padding-bottom: 40px;
+}
+.smartSvg{
+    height: 100%;
+}
+
+}

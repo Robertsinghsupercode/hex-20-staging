@@ -1,0 +1,15 @@
+/* training */
+/* xorbit section */
+
+.xorbitSection{
+    margin-left: 10rem;
+}
+
+@media(max-width:767px){
+    .xorbitSection{
+        margin-left: 4%;
+    }
+    .xorbitSection svg{
+        width: 30%;
+    }
+}

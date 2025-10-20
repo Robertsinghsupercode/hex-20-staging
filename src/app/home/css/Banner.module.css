@@ -1,0 +1,169 @@
+.SatelliteModelWrap{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45rem;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.SatelliteModelItem{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+}
+
+.satelliteModelText{
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  opacity: 0;
+}
+
+.satelliteModelText h3{
+  max-width: 250px;
+  text-align: right;
+}
+
+.BannerContent {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;             
+  align-items: flex-end;     
+  justify-content: center;
+  position: relative;
+}
+
+.BannerContent img {
+  position: absolute;
+  width: auto;                 
+  padding-bottom: 60px; 
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.BannerContent .pin-spacer {
+  overflow: hidden !important;
+  max-width: 100% !important;
+}
+
+.BannerEarth{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.bannerFalconImg{
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  object-fit: contain;
+  transform: translateX(-100%); 
+  width: 50%;
+}
+
+.falconImgText{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.falconImgText h3{
+  max-width: 180px;
+  text-align: left;
+}
+
+.bannerEarthImg{
+  position: relative;
+}
+
+.bannerStars{
+  position: relative;
+}
+
+.bannerStars svg{
+  width: 100%;
+}
+
+.bannerStars circle,
+.bannerStars ellipse {
+  opacity: 0;
+}
+
+/* Who We Are Section */
+.whoWeAreContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 0;
+}
+
+.whoWeAreContent p{
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 16px;
+  background: var(--color-8);
+}
+
+@media(max-width:768px){
+  .BannerContent img {
+    left: 0;
+  }
+  .BannerContent img{
+    max-width: 100% !important;
+    top: 210px !important;
+  }
+  .satelliteModelText{
+    align-items: flex-end;
+    top: 30%;
+    left: 5%;
+  }
+  .satelliteModelText svg{
+    max-width: 90px;
+  }
+  .satelliteModelText h3{
+    max-width: 120px;
+  }
+  .bannerFalconImg{
+    position: static;
+  }
+  .bannerFalconImg img{
+    max-width: 200px;
+  }
+  .bannerEarthImg img{
+    margin-top: -100px;
+  }
+  .falconImgText{
+    top: unset;
+    bottom: 10%;
+    left: 0;
+  }
+  .falconImgText img{
+    width: 80px;
+  }
+  .falconImgText h3{
+    font-family: "JetBrains Mono";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,90 @@
+.spaceCraftSec{
+    padding-bottom: 174px;
+}
+.decSec{
+    height: 440px;
+    background-image: url(/assets/sunset.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dec{
+    padding-top: 50px;
+    max-width: 50%;
+    text-align: center;
+}
+.groundSec{
+        height: 788px;
+        background-image: url(/assets/ground-v2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 34%;
+}
+.groundContainer{
+   padding-bottom: 100px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.groundContent{
+    max-width: 72%;
+}
+.groundSatelite{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 100px;
+}
+.groundContentWrap{
+    height: 170px;
+    padding-top: 50px;
+}
+.groundHeader{
+max-width: 52%;
+}
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .dec{
+        max-width: 100%;   
+    }
+    .groundContainerContent{
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+    .groundContent{
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 767px){
+    .decSec{
+        height: 200px;
+    }
+    .dec{
+        max-width: 100%;
+        padding: auto;
+    }
+    .groundSatelite img{
+        width: 200px;
+        height: 200px
+    }
+    .groundContent{
+        max-width: 100%;
+    }
+    .groundSec,.groundContentWrap{
+        height: auto;
+    }
+    .spaceCraftSec{
+        padding-bottom: 30px;
+    }
+    .groundContainer{
+        padding-bottom: 40px;
+    }
+    .groundHeader{
+        max-width: 100%;
+    }
+    .groundSatelite{
+        padding: 38px 0;
+        justify-content: center;
+    }
+    .groundContentWrap{
+        padding-top: 0;
+    }
+}

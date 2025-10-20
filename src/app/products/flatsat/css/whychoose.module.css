@@ -1,0 +1,16 @@
+.box{
+    padding: 0px 0px 150px 0px;
+    background-color: var(--color-3);
+}
+.borderTop{
+    padding-top: 110px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.heading{
+    padding-bottom: 60px;
+}
+.advantagesBox{
+    gap: 0px !important;
+    height: 200px;
+    justify-content: space-between;
+}

@@ -1,0 +1,34 @@
+.readMoreBtnContainer {
+  cursor: pointer;
+}
+.cta-btn{
+  position: relative;
+}
+.readMoreBtnContainer button .svg-bg,.readMoreBtnContainer button .ctn-btn-text{
+  position: absolute;
+}
+.text-arrow-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 26%;
+  width: 100%;
+  padding: 0 26px;
+}
+
+.svg-arrow-down {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+/* responsive  */
+@media(max-width:767px){
+  .readMoreBtnContainer {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,26 @@
+.jdContent{
+    max-width: 80%;
+  }
+  .jdLocation{
+    gap: 150px;
+    padding-top: 24px;
+  }
+  .jdLocation,.jd{
+    padding-bottom: 70px;
+  }
+  .jd{
+    gap: 15px;
+  }
+  .keyResponsibilities ul{
+    padding-top: 15px;
+  }
+  .keyResponsibilities ul li{
+    gap: 20px;
+  }
+  .keyResponsibilities ul li svg{
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+  .jdkeyContainer{
+    gap: 70px;
+  }

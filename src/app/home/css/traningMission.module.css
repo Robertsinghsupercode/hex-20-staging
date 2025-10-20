@@ -1,0 +1,56 @@
+.traningMissionSec{
+    padding-bottom: 160px;
+}
+.box{
+    padding: 60px 30px;
+    border: 1px solid #353535;
+    display: flex;
+    align-items: center;
+    width: 643px;
+    height: 287px;
+}
+.box .cta-btn{
+    width: 100%;
+}
+.boxContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media (max-width: 768px){
+    .traningMissionSec{
+        padding-bottom: 60px;
+    }
+    .traningMissionWrapper{
+        flex-direction: column;
+    }
+    .box{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+}
+
+/* Training SVG Animation */
+.traningPath {
+    stroke-dashoffset: 1852.9552001953125px;
+    stroke-dasharray: 1852.9552001953125px;
+    transition: stroke-dashoffset 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+  }
+  
+  .activeSvg .traningPath {
+    stroke-dashoffset: 0 !important;
+  }
+  
+  /* Mission SVG Animation */
+  .missionsPath {
+    stroke-dashoffset: 1190.5516357421875px;
+    stroke-dasharray: 1190.5516357421875px;
+    transition: stroke-dashoffset 2s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+  }
+  
+  .activeSvg .missionsPath {
+    stroke-dashoffset: 0 !important;
+  }

@@ -1,0 +1,81 @@
+.xorbitWrapper {
+    padding-top: 100px;
+}
+
+.contentwrapper {
+    width: 100%;
+    max-width: 1074px;
+}
+
+.contentwrapper h2 {
+    padding-top: 40px;
+}
+
+.gridWrapper {
+    padding-top: 60px;
+}
+
+.card {
+    position: relative;
+    min-height: 220px;
+}
+
+.card svg {
+    position: absolute;
+}
+
+.cardContent {
+    position: absolute;
+    top: 63%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+}
+
+.card2 svg,
+.card4 svg {
+    right: 0;
+}
+
+.card2 .cardContent,
+.card4 .cardContent {
+    right: 0%;
+    left: unset;
+    align-items: flex-end;
+}
+
+.card2 .cardContent {
+    right: -10%;
+}
+
+.card3 .cardContent {
+    left: 46%;
+}
+
+
+@media (max-width:768px){
+    .gridWrapper{
+        padding: 40px 20px;
+    }
+    .gridWrapper .card svg{
+        width: 120px;
+        height: auto;
+    }
+
+    .cardContent{
+        top: 46%;
+        /* position: unset; */
+        transform: unset;
+        left: unset !important;
+    }
+    .card2 .cardContent,
+.card4 .cardContent {
+    right: unset;
+    /* left: 46%; */
+    align-items: flex-start;
+}
+.contentwrapper h2 {
+    padding-top: 40px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+}

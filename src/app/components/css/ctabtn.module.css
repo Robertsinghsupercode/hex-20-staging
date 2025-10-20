@@ -1,0 +1,161 @@
+/* Button */
+.cta-btn,
+.cta-btn-dark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 28px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  width: 310px;
+    height: 56px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+@media (max-width:767px){
+  .cta-btn,
+  .cta-btn-dark {
+    padding: 14px 36px;
+  }
+  .cta-btn, .svg-bg{
+    width: 100%;
+  }
+}
+
+/* SVG Background and Border */
+.svg-bg {
+  position: absolute;
+  /* left: 12px; */
+  left:0;
+  top: 0;
+  z-index: 0;
+}
+
+.btn-bg,
+.btn-border {
+  transition: all 0.3s ease;
+}
+
+/* Text */
+.ctn-btn-text {
+  position: relative;
+  z-index: 1;
+  color: var(--color-4); /* Default text color for light variant */
+}
+
+/* Arrow */
+.svg-arrow {
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+
+/* Default btn (light variant) */
+.cta-btn {
+  color: var(--color-4);
+}
+
+.cta-btn:hover .btn-bg {
+  fill: transparent;
+}
+
+.cta-btn:hover .btn-border {
+  stroke: var(--color-3);
+}
+
+.cta-btn:hover .ctn-btn-text {
+  color: var(--color-3);
+}
+
+.cta-btn:hover .svg-arrow {
+  transform: translateX(5px);
+}
+
+.cta-btn:hover .svg-arrow path {
+  stroke: var(--color-3);
+}
+
+/* Dark btn */
+.cta-btn-dark {
+  color: var(--color-3);
+}
+
+.cta-btn-dark .ctn-btn-text {
+  color: var(--color-3); /* Text color for dark variant */
+}
+
+.cta-btn-dark:hover .btn-bg {
+  fill: transparent;
+}
+
+.cta-btn-dark:hover .btn-border {
+  stroke: var(--color-4);
+}
+
+.cta-btn-dark:hover .ctn-btn-text {
+  color: var(--color-4);
+}
+
+.cta-btn-dark:hover .svg-arrow {
+  transform: translateX(5px);
+}
+
+.cta-btn-dark:hover .svg-arrow path {
+  stroke: var(--color-4);
+}
+
+/* Additional Classes */
+.cta-btn-2 {
+  display: inline-block;
+}
+
+.cta-btn-2 div svg {
+  position: relative;
+  left: -5%;
+}
+
+.mobileMenu {
+  background-color: var(--color-4);
+}
+
+.mobileMenu span {
+  color: var(--color-3);
+}
+
+.mobileMenu:hover {
+  background-color: transparent;
+  border-color: var(--color-4);
+}
+
+.mobileMenu:hover span {
+  color: var(--color-4);
+}
+
+.mobileMenu .products-active svg,
+.products-active svg path {
+  stroke: var(--color-3);
+  fill: var(--color-3);
+}
+
+.transprantBg .svg-arrow path {
+  stroke: #fff;
+}
+.transprantBg .svg-bg .btn-border{
+  stroke: var(--color-3)
+}
+.transprantBg .ctn-btn-text{
+  color: #fff;
+}
+.transprantBg svg path{
+fill: transparent;
+}
+.svg-arrow-down{
+  display: none ;
+}

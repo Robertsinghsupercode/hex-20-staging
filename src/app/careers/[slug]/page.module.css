@@ -1,0 +1,16 @@
+.pageContainer {
+    background-color: var(--color-3);
+    color: var(--color-4);
+    padding-top: 200px;
+  }
+  .pageWrapper{
+    grid-template-columns: repeat(2, 2fr);
+    display: grid;
+    padding-bottom: 80px;
+  }
+  /* responsive  */
+  @media(max-width:768px){
+    .pageWrapper{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

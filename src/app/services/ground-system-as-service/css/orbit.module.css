@@ -1,0 +1,53 @@
+.orbitSec{
+    background-image: url(/assets/orbit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    height: 1164px;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+
+.orbitContent{
+    max-width: 47%;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+.imgContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.svg{
+    position: relative;
+    left: 8%;
+}
+
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .orbitContent{
+        padding-top: 600px;
+    }
+}
+
+@media(max-width: 767px){
+    .orbitSec{
+        height: 316px;
+        margin-bottom: 60px;
+    }
+    .orbitContent{
+        max-width: 60%; 
+        padding-top: 150px;
+    }
+    .imgContainer{
+        justify-content: flex-end;
+    }
+    .imgContainer img{
+        width: 90%;
+        height: auto;
+    }
+    .imgContainer .svg{
+        display: none;
+    }
+}

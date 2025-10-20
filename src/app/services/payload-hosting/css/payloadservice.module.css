@@ -1,0 +1,84 @@
+.payloadServiceSec {
+  position: relative;
+  height: 830px;
+  background-color: var(--color-4);
+  background-image: url('/assets/lunar-img.png');
+  background-repeat: no-repeat;
+  background-position: left calc(100% - 25px);
+  background-size: contain;
+  display: flex;
+  margin-bottom: 150px;
+  overflow: hidden;
+}
+
+.lunarOrbitWrapper {
+  position: absolute;
+  left: -19.8rem;
+  top: 54.1%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.payloadContent {
+  position: relative;
+  z-index: 2;
+  left: 12%;
+  top: 20%;        
+}
+
+.svgArrow {
+  flex-shrink: 0;
+  margin-top: 25px;
+}
+.description{
+    max-width: 45%;
+    margin-top: 7px;
+}
+
+.img{
+  width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .payloadContent{
+    left: 10%;
+  }
+  .svgArrowWrapper{
+    width: 80%;
+  }
+  .svgArrow{
+    width: 100%;
+  }
+    .description{
+    max-width: 100%;;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .payloadServiceSec{
+    height: 500px;
+    margin-bottom: 60px;
+    background-size: 800px;
+  }
+  .lunarOrbitWrapper{
+    left: -5rem;
+  }
+  .payloadContent{
+    left: 5%;
+    top: 32%;
+  }
+  .img{
+  width: 90%;
+}
+}
+@media (max-width: 480px) {
+  .img{
+    width: 66%;
+    object-fit: cover;
+  }
+  .description{
+    width: 94%;
+  }
+}

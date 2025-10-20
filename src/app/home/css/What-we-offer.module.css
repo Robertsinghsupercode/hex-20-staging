@@ -1,0 +1,48 @@
+.whatWeOfferSection{
+  padding-bottom: 150px;
+}
+.offerMarqueeWrapper{
+    padding-top: 80px;
+}
+.offerSateliteContainer{
+    width: 424px;
+    height: 450px;
+    border: 1px solid #353535;
+    padding: 32px;
+}
+
+.offerSateliteContainer {
+    position: relative;
+    overflow: hidden; 
+  }
+
+  .sateliteBoxContentTitle,
+  .sateliteBoxContent svg {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+  }
+  
+  /* Content overlay */
+  .sateliteBoxContentContent {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background: var(--color-4);
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* On hover */
+  .offerSateliteContainer:hover .sateliteBoxContentTitle,
+  .offerSateliteContainer:hover .sateliteBoxContent svg {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .offerSateliteContainer:hover .sateliteBoxContentContent {
+    opacity: 1;
+    transform: translateY(0);
+  }

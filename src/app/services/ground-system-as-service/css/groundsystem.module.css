@@ -1,0 +1,49 @@
+.groundsystemSec{
+    position: relative;
+    height: 866px;
+}
+.slideImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.groundsystemContent ul{
+    padding: 30px 0;
+    gap: 24px;
+}
+.groundsystemContent{
+    padding-top: 260px;
+    max-width: 45%;
+}
+
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .groundsystemContent{
+        max-width: 100%;
+    }
+    .slideImage{
+        opacity: 0.3;
+    }
+    .groundsystemSec{
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 767px){
+    .slideImage{
+        width: 60%;
+        height: auto;
+        top: 18%;
+    }
+    .groundsystemContent{
+        max-width: 100%;
+        padding-top: 40px;
+    }
+    .groundsystemContent ul{
+        padding-top: 200px;
+    }
+    .groundsystemSec{
+        height: auto;
+    }
+}

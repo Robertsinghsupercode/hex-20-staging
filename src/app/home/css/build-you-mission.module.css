@@ -1,0 +1,52 @@
+.buildHeadingContainer{
+    position: relative;
+    max-width: 70%;
+    margin-bottom: 67px;
+}
+
+.plusIconLeft, .plusIconRight{
+position: absolute;
+}
+
+.plusIconLeft{
+    top: 0;
+    left: 0;
+}
+
+.plusIconRight{
+    bottom: 0;
+    right: 0;
+}
+
+.dropdownContainer{
+    border: 1px solid var(--color-3);
+    width: 183px;
+    height: 56px;
+    padding: 10px;
+}
+
+.dropdownContainerWrap{
+    height: 400px;
+}
+
+.buildSection {
+    /* background-image: url('/assets/buildSecEarth.png'); */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    position: relative;
+}
+/* gradient  */
+.gradientTop{
+    z-index: -1;
+    background-image: url(/assets/gradientImg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    width: 100%;
+    height: 1885.38px;
+    position: absolute;
+    top: -90%;
+}
+

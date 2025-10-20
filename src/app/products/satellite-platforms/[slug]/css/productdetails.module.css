@@ -1,0 +1,91 @@
+.ProductDetailsSec{
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
+.tabHeader{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tabHeadContent{
+    opacity: 0.1;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    width: 174px;
+    padding-bottom: 25px;
+    position: relative;
+    bottom: -1px;
+}
+.activeTab .tabHeadContent{
+    opacity: 1;
+    border-bottom: #000 solid 1px;
+}
+.tabContent{
+    padding-top: 60px;
+    padding-bottom: 90px;
+    display: flex;
+    gap: 110px;
+}
+.tabLi svg{
+    display: flex;
+    flex-shrink: 0;
+}
+.tabUl{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tabUl li{ 
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.tabUl li p{ 
+color: rgba(9, 9, 9, 0.4);;
+}
+.tabTag{
+    padding-bottom: 14px;
+}
+.tabDescription{
+    max-width: 60%;
+    width: 100%;
+}
+.highlight {
+    color: var(--color-4);
+  }
+
+/* responsive  */
+  @media(max-width:991px){
+
+    .tabContent,
+    .tabUl{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media(max-width:767px){
+
+    .tabDescription{
+        max-width:80%;
+    }
+    .tabHeadContent{
+        width: 64px;
+    }
+    .tabHeader{
+        gap: 20px;
+    }
+    .tabContent{
+        padding-bottom: 30px;
+    }
+}
+
+  @media(max-width: 368px){
+    
+    .tabHeadContent{
+        width:150px;
+   }
+  }
+
+  

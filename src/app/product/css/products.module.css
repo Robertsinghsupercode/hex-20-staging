@@ -1,0 +1,27 @@
+.productSec{
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
+.desContainer{
+    max-width: 75%;
+    width: 100%;
+}
+
+/* responsive  */
+@media (max-width: 768px) {
+    .productSec{
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+    .productContainer{
+        flex-direction: column;
+    }
+    .productImgContainer img{
+        width: 100%;
+        height: auto;
+    }
+    .desContainer{
+        max-width: 100%;
+        padding-bottom: 90px;
+    }
+}

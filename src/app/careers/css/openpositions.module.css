@@ -1,0 +1,138 @@
+.OpenPositionsBanner{
+background-color: var(--color-3);
+color: var(--color-4);
+padding-bottom: 150px;
+}
+.OpenPositionsHead{
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(89, 89, 89, 0.2);
+}
+.OpenPositionsHeading{
+    max-width: 50%;
+    width: 100%;
+}
+.filterContainer{
+    gap: 54px;
+}
+.filterBox{
+    border: 1px solid rgba(89, 89, 89, 0.2);
+    cursor: pointer;
+}
+.locationRoleContainer{
+    gap: 124px;
+}
+.openPositionsContainer{
+    border-bottom: 1px solid rgba(89, 89, 89, 0.2);
+    padding: 20px 0;
+    gap: 8px;
+}
+.openPositionsContainerRight{
+    gap: 176px;
+}
+
+.careersCtaSec{
+    padding-top: 130px;
+}
+  
+  .filterBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-3);
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .filterBoxMenu {
+    position: absolute;
+    top: calc(100% + 0px);
+    left: 0;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background-color: var(--color-3);
+    z-index: 100;
+    display: none;
+  }
+  
+  .filterBoxMenu.open {
+    display: block;
+  }
+  
+  .filterBoxItem {
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .filterBoxItem:hover,
+  .filterBoxItem:focus {
+    opacity: 1;
+  }
+  
+  .filterBoxArrow {
+    position: absolute;
+    right: 12px;
+    pointer-events: none;
+  }
+
+  .filterBoxTrigger{
+    width: 100%;
+    padding: 8px 12px;
+  }
+  .noMatch{
+    padding-top: 50px;
+  }
+
+  /* responsive  */
+  @media(max-width:768px){
+    .OpenPositionsHead{
+        flex-direction: column;
+    }
+    .OpenPositionsHeading{
+        max-width: 100%;
+        padding-bottom: 16px;
+        padding-top: 20px;
+    }
+    .filterContainer{
+        margin-left: -40px;
+    }
+
+    .OpenPositionsBanner{
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+    .OpenPositionsHeading{
+      max-width: 80%;
+    }
+    .OpenPositionsHead{
+      align-items: flex-start !important;
+      padding-bottom: 30px;
+    }
+    .filterContainer{
+
+      margin-left: 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 8px;
+    }
+    .openPositionsContainerRight, .openPositionsContainer{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .filterBox {
+      width: auto;
+    }
+    .locationRoleContainer{
+      gap: 8px;
+    }
+    .openPositionsContainerRight{
+      gap: 16px;
+      width: 100%;
+    }
+    .btnContainer{
+      width: 100%;
+    }
+}

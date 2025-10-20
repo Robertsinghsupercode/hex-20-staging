@@ -1,0 +1,83 @@
+.globalnetSec{
+padding-bottom: 60px;
+}
+.globalnetHead{
+    max-width: 60%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.globalnetHead p{
+    padding: 0 10%;
+ }
+.globalnetBody button{
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.globalnetBody, .tabHead{
+    position: relative;
+}
+.tabHead{
+z-index: 50;
+}
+.mapGradinet{
+    width: 100%;
+    height: 130px;
+    flex-shrink: 0;
+    background: linear-gradient(181deg, #090909 0.81%, rgba(9, 9, 9, 0.00) 99.19%);
+    position: absolute;
+    top: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .globalnetHead{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+    .tabContent {
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      .tabContent::-webkit-scrollbar {
+        display: none;
+      }
+      .globalnetHead{
+        max-width: 100%;
+      }
+      .globalnetBody button svg{
+        width: 14px;
+        height: 14px;
+      }
+      .globalnetSec{
+        padding-bottom: 0;
+      }
+}
+
+
+.sliderWrapper {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.sliderWrapper > div {
+    display: inline-flex;
+    flex-direction: row;
+    width: max-content; /* Ensure the container expands to fit all images */
+}
+
+.sliderWrapper img {
+    width: 100vw; /* Full viewport width */
+    height: auto;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: top; /* Prevent gaps below images */
+}

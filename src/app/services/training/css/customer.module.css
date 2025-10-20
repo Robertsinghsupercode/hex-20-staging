@@ -1,0 +1,13 @@
+.customerWrapper{
+    padding-top: 100px;
+}
+.ourCustomer svg{
+width: 36%;
+}
+
+@media(max-width:767px){
+.trainingLogos img {
+        width: 80px !important;
+        opacity: 0 !important;
+    }
+}

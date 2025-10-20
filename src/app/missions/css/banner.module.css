@@ -1,0 +1,124 @@
+
+.missionBanner{
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.missionBannerContainer{
+    width: 80%;
+    padding-top: 160px;
+    background-color: var(--color-4);
+}
+.bannerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bannerSatelites{
+    color: transparent;
+    position: relative;
+    left: -2.7%;
+    top: -57px;
+}
+.timelineWrap {
+    position: relative;
+    display: inline-block;
+    top: 60px;
+  }
+  
+  .mission {
+    position: absolute;
+    text-align: center;
+  }
+  
+  .pointOneLabel {
+    top: 15px;
+    left: 125px;
+  }
+  
+  .pointTwoLabel {
+    top: -30px;
+    left: 282px;
+  }
+  
+  .pointThreeLabel {
+    top: -20%;
+    left: 490px;
+  }
+  
+  .pointFourLabel {
+    top: -11%;
+    left: 682px;
+  }
+  
+  .pointFiveLabel {
+    top: 10%;
+    left: 840px;
+  }
+.bannerContent{
+    max-width: 46%;
+    text-align: center;
+}
+
+.LatestsecMissions{
+  padding-top: 160px;
+}
+.latestSection .LatestsecMissions{
+  padding-bottom: 110px;
+}
+.svgG {
+  cursor: pointer;
+}
+
+/* tab */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .missionBanner svg {
+    display: none;
+  }
+  .bannerContent{
+    max-width: 80%;
+  }
+}
+
+/* mobile  */
+@media (max-width: 768px) {
+  .bannerContent {
+    max-width: 100%;
+    padding-bottom: 100px;
+  }
+  .LatestsecMissions{
+    padding-top: 0px;
+  }
+  .bannerSatelites{
+    left: -2.6%;
+    top: -30px;
+  }
+}
+
+/* banner animation  */
+
+.bannerSatelitesContainer{
+  position: relative;
+  width: 1440px;
+  /* width: 100%; */
+  height: 200px;
+}
+
+.lineOnly,.missionSvg{
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.missionSvg{
+  top: -21%;
+}
+
+.gOne, .gTwo, .gThree, .gFour, .gFive, .gSix, .gSeven, .gEight {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-20px);
+}

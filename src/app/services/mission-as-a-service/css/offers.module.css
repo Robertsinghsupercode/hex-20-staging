@@ -1,0 +1,107 @@
+.flatSatContainer svg, .missionDevContainer svg{
+    margin-top: 15px;
+    flex-shrink: 0;
+}
+.content{
+max-width: 50%;
+}
+.flatSatContainer{
+    padding: 100px 0;
+}
+.missionDevContainer{
+    max-width: 60%;
+}
+.missionDevSec{
+    padding-top: 100px;
+    height: 732px;
+    width: 100%;
+    background-image: url(/assets/missionDevBg-v2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: relative;
+    overflow: hidden;
+}
+.lineSVG{
+    position: absolute;
+    top: 5%;
+    right: -3%;
+    width: 100%;
+}
+.imgContainer{
+    height: 482px;
+    width: 604px;
+}
+.imgContainer{
+    position: relative;
+}
+.imgContainer img, .imgContainer svg{
+position: absolute;
+top: 0;
+}
+.imgContainer img{
+    z-index: 2;
+}
+.imgContainer svg{
+    left: 12%;
+    top: 24%;
+}
+
+/* responsive  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .flatSatContainer{
+        flex-direction: column;
+        padding-top: 60px;
+    }
+    .missionDevContainer{
+        max-width: 100%;
+    }
+}
+
+@media(max-width:767px){
+    .uaeflatSat{
+        width: 100%;
+        height: auto;
+    }
+    .flatSatContainer{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .missionDevContainer{
+        max-width: 100%;
+    }
+    .missionDevContainer svg{
+        transform: scaleX(-1);
+        width: 130px;
+    }
+    .missionDevSec{
+        height: 150px;
+        padding-top: 0;
+    }
+    .missionDevSec{
+        height: 300px;
+        background-size: contain;
+        background-position: bottom;
+    }
+    .lineSVG{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: auto;
+    right: 0%;
+    bottom: 5%;
+    }
+    .imgContainer{
+        width: 100%;
+        height: 320px;
+    }
+    .imgContainer svg{
+        width: 60%;
+        height: auto;
+        left: 12%;
+        top: 12%;
+    }
+    .content{
+        max-width: 100%;
+    }
+}

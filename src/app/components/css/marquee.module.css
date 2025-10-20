@@ -1,0 +1,29 @@
+.logoSliderOverlaySection{
+    position: relative;
+    padding-top: 60px;
+}
+.logoSliderOverlayContainer{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    z-index: 1;
+}
+.logoSliderOverlayLeft{
+    background: linear-gradient(90deg, #090909 0%, rgba(0, 0, 0, 0) 100%);
+    width: 160px;
+}
+.logoSliderOverlayRight{
+    background: linear-gradient(270deg, #090909 0%, rgba(0, 0, 0, 0) 100%);
+    width: 160px;
+}
+
+
+/* Training page  */
+
+
+.trainingLogos img {
+  margin-right: 5rem;
+}

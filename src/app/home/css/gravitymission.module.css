@@ -1,0 +1,46 @@
+/* Asteroids section */
+.asteroidsSec{
+    position: relative;
+    height: 1400px;
+}
+
+.gradientOrange{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(154, 85, 0, 0) 0%, #9a5500 100%);
+}
+
+.asteroidsSpacecraftBus{
+    left: 42%;
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+}
+
+.asteroidsLeft, .asteroidsRight{
+    position: absolute;
+}
+
+.asteroidsLeft{
+    top: -16%;
+    left: 0;
+}
+
+.asteroidsRight{
+    bottom: -10%;
+    right: 0;
+}
+.asteroidsContentWrap{
+    position: absolute;
+    bottom: 10%;
+    width: 55%;
+    text-align: center;
+}
+
+.asteroidsPlusIcon{
+    position: absolute;
+    top: -200%;
+    left: -10%;
+}

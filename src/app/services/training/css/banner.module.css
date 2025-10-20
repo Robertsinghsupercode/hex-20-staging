@@ -1,0 +1,34 @@
+.trainingBanner{
+ padding-top: 170px;
+}
+
+.trainingBannerContent{
+}
+
+.trainingBannerContent h1, .trainingBannerContent p{
+    max-width: 611px;
+}
+
+.bannerSlider{
+    padding-top: 60px;
+}
+
+
+.splide__slide{
+    width: calc(46%) !important;
+}
+
+.logoImage{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .bannerSlider{
+        padding-top: 40px;
+    }
+    .logoImage{
+        height: 200px;
+    }
+
+}

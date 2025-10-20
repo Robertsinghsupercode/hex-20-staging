@@ -1,0 +1,24 @@
+
+.collaboratorsSec{
+    padding-bottom: 200px;
+}
+.collaboratorsHeader{
+    padding-bottom: 60px;
+    max-width: 60%;
+}
+.collabSlider{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sliderItem {
+    margin-right: 50px;
+}
+@media (max-width: 768px) {
+    .collaboratorsHeader{
+        max-width: 100%;
+    }
+    .collaboratorsSec{
+        padding-bottom: 60px;
+    }
+}
