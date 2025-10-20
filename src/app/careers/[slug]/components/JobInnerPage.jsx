@@ -3,9 +3,6 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Styles from '../css/jobinnerpage.module.css'
-import CareersStyles from '@/app/components/css/contact.module.css'
-import CtaBtn from '@/app/components/CtaBtn'
-// import 
 
 export default function JobinnerPage() {
     const searchParams = useSearchParams()
